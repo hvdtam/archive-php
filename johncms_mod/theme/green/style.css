@@ -1,0 +1,355 @@
+/*
+
+    Design by K1p
+    Icq: 83-900-16
+    Public
+
+*/
+
+a:link, a:visited{ color: #618801; text-decoration: none; }
+
+a:hover{ color: #618801; text-decoration: underline; }
+
+a:active{ color: #618801; text-decoration: underline; }
+
+body{
+	background-color: #ecf6db;
+	color: #000000;
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: small;
+	margin: auto;
+	padding: 0px;
+    max-width: 450px;
+}
+
+form{ font-size: small; margin: 0px; padding: 0px; }
+
+h3{ margin: 0; padding: 0; padding-bottom: 2px; }
+
+hr{ border: 0; border-top: 1px solid gray; margin: 0; }
+
+p{ margin-top: 6px; margin-bottom: 6px; }
+
+ul{ margin: 0; padding-left: 20px; }
+
+input {
+    background-color: #8FC677;
+    border: 1px solid #76A463;
+    margin: 3px;
+    padding: 3px;
+    color: #ffffff;
+}
+
+input:hover {
+    background-color: #6E8862;
+    border: 1px solid #76A463;
+    margin: 3px;
+    padding: 3px;
+    color: #ffffff;
+}
+
+input:focus {
+    background-color: #8FC677;
+    border: 1px solid #76A463;
+    margin: 3px;
+    padding: 3px;
+    color: #ffffff;
+}
+
+textarea, select {
+    color: #6d6d6d;
+    background-color: #FFFFFF;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid #8FC677;
+}
+
+textarea:hover, select:hover {
+    color : #755168;
+    background-color : #FFFFFF;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid #8FC677;
+}
+
+textarea:focus, select:focus {
+    color: #755168;
+    background-color: #FFFFFF;
+    margin: 1px;
+    padding: 1px;
+    border: 1px solid #8FC677;
+}
+
+textarea {
+    width: 98%;
+}
+
+.logo {
+    background-color: #595e5a;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(images/lg.gif);
+    background-position: top;
+    background-repeat: repeat-x;
+}
+
+.header {
+    background-color: #595e5a;
+    padding: 4px;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.tmn {
+    background-color: #79ae00;
+    padding: 4px;
+}
+
+.tmn a {
+    color: #000000;
+}
+
+.maintxt {
+    background-color: #ffffff;
+    border: 1px solid #79ae00;
+    padding: 0px;
+    margin: 1px 0px 1px 0px;
+}
+
+.phdr {
+    background-color: #e5f1cb;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+    background-image: url(images/phdr.gif);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.menu {
+    background-color: #ffffff;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.news {
+    background-color: #e5f1cb;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.fmenu {
+    background-color: #79ae00;
+    padding: 4px;
+}
+
+.fmenu a {
+    color: #000000;
+}
+
+.footer {
+    background-color: #595e5a;
+    padding: 4px;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
+.end {
+    background-color: #595e5a;
+    background-image: url(images/end.gif);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.end2 {
+    padding: 3px;
+    text-align: center;
+    background-image: url(images/end2.gif);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.end a {
+    color: #000000;
+}
+
+.gmenu {
+    background-color: #bbdb88;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.bmenu {
+    background-color: #bbdb88;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.list1, .b {
+    background-color: #ffffff;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.list2, .c {
+    background-color: #f2fae6;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.sub {
+    border-top: 1px dashed #c3d782;
+    padding: 2px 0px 0px 0px;
+    margin: 2px 0px 0px 0px;
+    font-size: x-small;
+    color: #7c7c7c;
+}
+
+.gray {
+    color: #7c7c7c;
+}
+
+.red, .red a {
+    color: #ff0000;
+}
+
+.green {
+    color: #4ae000;
+}
+
+.status {
+    color: #e38a22;
+    font-weight: bold;
+}
+
+.func {
+    border-left: 4px solid #72a000;
+    padding: 0px 4px 0px 4px;
+    margin: 2px 2px 2px 2px;
+    font-size: x-small;
+}
+
+.quote {
+    border-left: 4px solid #7c7c7c;
+    padding: 0px 4px 0px 4px;
+    margin: 2px 2px 2px 2px;
+    color: #7c7c7c;
+}
+
+.greply {
+    border-left: 4px solid #77ae00;
+    padding: 0px 4px 0px 4px;
+    margin: 2px 2px 2px 2px;
+    color: #77ae00;
+}
+
+.reply {
+    border-left: 4px solid #cc602a;
+    padding: 0px 4px 0px 4px;
+    margin: 2px 2px 2px 2px;
+    color: #cc602a;
+}
+
+.clip {
+    background-color: #bbdb88;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+    font-size: x-small;
+    color: #4f6526;
+}
+
+.rmenu {
+    background-color: #ecb26e;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #d7892d;
+}
+
+.rmenu a {
+    color: #a05701;
+}
+
+.alarm {
+    background-color: #e3311e;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #ae1b0c;
+}
+
+.alarm a {
+    color: #ffffff;
+}
+
+.phpcode {
+    background-color: #eeffdc;
+    border: 1px dashed #d0e6bb;
+    padding: 3px;
+    margin: 1px;
+}
+
+.bblist {
+    color: #547c0a;
+    background: transparent url(../../images/dot.gif) no-repeat left;
+    padding: 0px 0px 0px 10px;
+}
+
+.sitemap {
+    background-color: #f2fae6;
+    margin: 1px;
+    padding: 2px 4px 3px 4px;
+    font-size: xx-small;
+    border: 1px solid #72a000;
+    height: 38px;
+    overflow: auto;
+}
+
+.user {
+    background-color: #dbf4b4;
+    padding: 4px;
+    margin: 1px;
+    border: 1px solid #72a000;
+}
+
+.topmenu {
+    background-color: #dbf4b4;
+    padding: 2px;
+    margin: 1px;
+    border: 1px solid #72a000;
+    font-size: x-small;
+}
+
+.currentpage {
+    background-color: #b3d663;
+    border: 1px solid #79ae00;
+    padding: 0px 5px 0px 5px;
+}
+
+a.pagenav {
+    border: 1px solid #b3d663;
+    padding: 0px 3px 0px 3px;
+    text-decoration: none;
+}
+
+a.pagenav:hover {
+    background-color: #b3d663;
+    border: 1px solid #79ae00;
+}
+
+/*
+
+    Design by K1p
+    Icq: 83-900-16
+    Public
+
+*/

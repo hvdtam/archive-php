@@ -1,0 +1,16 @@
+666666:BgColor
+DFEAF8:FrameColor
+000000:FrameSize
+666666:SoftkeyTextColor
+000008:SoftkeyTextFont
+000001:SoftkeyTextPadding
+000000:TextFont
+FFFFFF:TextColor
+000001:TextPadding
+666666:MenuTextColor
+DFEAF8:MenuBarColor
+E8AE5C:MenuBarTransColor
+FF9900:MenuBarHighlightColor
+FFFFFF:MenuTextHighlightColor
+000002:MenuPadding
+000007:ScrollBarWidth

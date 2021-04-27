@@ -1,0 +1,208 @@
+﻿//----------------------------------------------------------------------------------//
+// Mod level đột kích cho johncms 4.4 by [plak]_khang. Diễn đàn http://forumplak.tk //
+//----------------------------------------------------------------------------------//
+Bước 1: up file forum vào images
+Bước 2: Mở forum/index.php
+tìm
+
+// Время поста
+echo ' <span class="gray">(' . functions::display_date($res['time']) . ')</span><br />';
+
+thêm đằng sau
+
+// level
+					$user_u = $res['user_id'];
+$req_u = mysql_query("SELECT * FROM `users` WHERE `id` = '$user_u' LIMIT 1");
+$res_u = mysql_fetch_array($req_u);
+$exp = $res_u['postforum']*100;
+						if ($exp >= 0 && $exp <500)
+						{
+							$chucdanh = '<img src="../images/forum/level/hocvien.gif" width="23" height="26" align="middle"/> Học Viên';
+						}
+						
+						if ($exp >= 501 && $exp <1000)
+						{
+							$chucdanh = '<img src="../images/forum/level/tanbinh.gif" width="23" height="26" align="middle"/> Tân Binh';
+						}
+						if ($exp >= 1001 && $exp <2000)
+						{
+							$chucdanh = '<img src="../images/forum/level/binhbet.gif" width="23" height="26" align="middle"/> Binh Bét';
+						}
+						if ($exp >= 2001 && $exp <3500)
+						{
+							$chucdanh = '<img src="../images/forum/level/binhnhi.gif" width="23" height="26" align="middle"/> Binh Nhì';
+						}
+						if ($exp >= 3501 && $exp <5000)
+						{
+							$chucdanh = '<img src="../images/forum/level/binhnhat1.gif" width="23" height="26" align="middle"/> Binh Nhất';
+						}
+						
+						if ($exp >= 5001 && $exp <10000)
+						{
+							$chucdanh = '<img src="../images/forum/level/hasi.gif" width="23" height="26" align="middle"/> Hạ Sĩ';
+						}
+						
+						if ($exp >= 10001 && $exp <20001)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungsi.gif" width="23" height="26" align="middle"/> Trung Sĩ';
+						}
+						if ($exp >= 20001 && $exp <30000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongsi.gif" width="23" height="26" align="middle"/> Thượng Sĩ';
+						}
+						if ($exp >= 40001 && $exp <50000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieuuy.gif" width="23" height="26" align="middle"/> Thiếu Úy';
+						}
+						if ($exp >= 60001 && $exp <70000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trunguy.gif" width="23" height="26" align="middle"/> Trung Úy';
+						}
+						if ($exp >= 80001 && $exp <90000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuonguy.gif" width="23" height="26" align="middle"/> Thượng Úy';
+						}
+						if ($exp >= 100001 && $exp <120000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieuta.gif" width="23" height="26" align="middle"/> Thiếu Tá';
+						}
+						if ($exp >= 120001 && $exp <140000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungta.gif" width="23" height="26" align="middle"/> Trung Tá';
+						}
+						if ($exp >= 140001 && $exp <160000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongta.gif" width="23" height="26" align="middle"/> Thượng Tá';
+						}
+						if ($exp >= 200001 && $exp <250000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieutuong.gif" width="23" height="26" align="middle"/> Thiếu Tướng';
+						}
+						if ($exp >= 300001 && $exp <350000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungtuong.gif" width="23" height="26" align="middle"/> Trung Tướng';
+						}
+						if ($exp >= 400001 && $exp <450000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongtuong.gif" width="23" height="26" align="middle"/> Thượng Tướng';
+						}
+						if ($exp >= 450001 && $exp <500000)
+						{
+							$chucdanh = '<img src="../images/forum/level/daituong.gif" width="23" height="26" align="middle"/> Đại Tướng';
+						}
+						
+						
+						if ($exp >= 500001)
+						{
+						
+							$chucdanh = '<img src="../images/forum/level/tongtulenh.gif" width="25" height="15" /> Tổng Tư Lệnh';
+						}
+echo '<font color="red"><u>Cấp bậc:</u> ' . $chucdanh . ' </font><br/>';
+
+Xong. save và đóng lại 
+
+Bước 3: Mở head.php
+tìm 
+-----------------------------------------------------------------
+Главное меню пользователя
+-----------------------------------------------------------------
+*/
+echo '<div class="menu">' .
+     (isset($_GET['err']) || $headmod != "mainpage" || ($headmod == 'mainpage' && $act) ? '<a href=\'' . $set['homeurl'] . '\'>' . $lng['homepage'] . '</a> | ' : '') .
+     ($user_id ? '<a href="' . $set['homeurl'] . '/users/profile.php?act=office">' . $lng['personal'] . '</a> | ' : '') .
+     ($user_id ? '<a href="' . $set['homeurl'] . '/exit.php">' . $lng['exit'] . '</a>' : '<a href="' . $set['homeurl'] . '/login.php">' . $lng['login'] . '</a> | <a href="' . $set['homeurl'] . '/registration.php">' . $lng['registration'] . '</a>') .
+  
+     '</div><div class="maintxt">';
+ 
+/*
+
+thêm đằng sau 
+
+// level
+                        if ($exp >= 0 && $exp <500)
+						{
+							$chucdanh = '<img src="../images/forum/level/hocvien.gif" width="23" height="26" align="middle"/> Học Viên';
+						}
+						
+						if ($exp >= 501 && $exp <1000)
+						{
+							$chucdanh = '<img src="' .$set['homeurl']. '/images/forum/level/tanbinh.gif" width="23" height="26" align="middle"/> Tân Binh';
+						}
+						if ($exp >= 1001 && $exp <2000)
+						{
+							$chucdanh = '<img src="' .$set['homeurl']. '/images/forum/level/binhbet.gif" width="23" height="26" align="middle"/> Binh Bét';
+						}
+						if ($exp >= 2001 && $exp <3500)
+						{
+							$chucdanh = '<img src="../images/forum/level/binhnhi.gif" width="23" height="26" align="middle"/> Binh Nhì';
+						}
+						if ($exp >= 3501 && $exp <5000)
+						{
+							$chucdanh = '<img src="../images/forum/level/binhnhat1.gif" width="23" height="26" align="middle"/> Binh Nhất';
+						}
+						
+						if ($exp >= 5001 && $exp <10000)
+						{
+							$chucdanh = '<img src="../images/forum/level/hasi.gif" width="23" height="26" align="middle"/> Hạ Sĩ';
+						}
+						
+						if ($exp >= 10001 && $exp <20001)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungsi.gif" width="23" height="26" align="middle"/> Trung Sĩ';
+						}
+						if ($exp >= 20001 && $exp <30000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongsi.gif" width="23" height="26" align="middle"/> Thượng Sĩ';
+						}
+						if ($exp >= 40001 && $exp <50000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieuuy.gif" width="23" height="26" align="middle"/> Thiếu Úy';
+						}
+						if ($exp >= 60001 && $exp <70000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trunguy.gif" width="23" height="26" align="middle"/> Trung Úy';
+						}
+						if ($exp >= 80001 && $exp <90000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuonguy.gif" width="23" height="26" align="middle"/> Thượng Úy';
+						}
+						if ($exp >= 100001 && $exp <120000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieuta.gif" width="23" height="26" align="middle"/> Thiếu Tá';
+						}
+						if ($exp >= 120001 && $exp <140000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungta.gif" width="23" height="26" align="middle"/> Trung Tá';
+						}
+						if ($exp >= 140001 && $exp <160000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongta.gif" width="23" height="26" align="middle"/> Thượng Tá';
+						}
+						if ($exp >= 200001 && $exp <250000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thieutuong.gif" width="23" height="26" align="middle"/> Thiếu Tướng';
+						}
+						if ($exp >= 300001 && $exp <350000)
+						{
+							$chucdanh = '<img src="../images/forum/level/trungtuong.gif" width="23" height="26" align="middle"/> Trung Tướng';
+						}
+						if ($exp >= 400001 && $exp <450000)
+						{
+							$chucdanh = '<img src="../images/forum/level/thuongtuong.gif" width="23" height="26" align="middle"/> Thượng Tướng';
+						}
+						if ($exp >= 450001 && $exp <500000)
+						{
+							$chucdanh = '<img src="../images/forum/level/daituong.gif" width="23" height="26" align="middle"/> Đại Tướng';
+						}
+						
+						
+						if ($exp >= 500001)
+						{
+						
+							$chucdanh = '<img src="../images/forum/level/tongtulenh.gif" width="25" height="15" /> Tổng Tư Lệnh';
+						}
+						echo '<u>Cấp bậc:</u> ' . $chucdanh . '';
+						echo '<br/>';	
+
+Xong. save và đóng lại 
+mod by [plak]_khang						

@@ -1,0 +1,22 @@
+AddDefaultCharset UTF8
+RewriteEngine on
+RewriteRule ^d/([0-9]+)/([0-9Aa-zZ]+)/$ index.php?f=d&id=$1&h=$2
+RewriteRule ^d/([0-9]+)/([0-9Aa-zZ]+)$ index.php?f=d&id=$1&h=$2
+RewriteRule ^file/([0-9]+)/$ index.php?f=file&id=$1
+RewriteRule ^file/([0-9]+)$ index.php?f=file&id=$1
+RewriteRule ^upload/$ index.php?f=upload
+RewriteRule ^upload$ index.php?f=upload
+RewriteRule ^search/$ index.php?f=search
+RewriteRule ^search$ index.php?f=search
+RewriteRule ^admin/$ index.php?f=admin
+RewriteRule ^admin$ index.php?f=admin
+RewriteRule ^admin/cpanel/$ index.php?f=sp_files
+RewriteRule ^admin/cpanel$ index.php?f=sp_files
+RewriteRule ^admin/cpanel/exit/$ index.php?f=sp_files&exit
+RewriteRule ^admin/cpanel/exit$ index.php?f=sp_files&exit
+RewriteRule ^admin/cpanel/page/([0-9]+)/$ index.php?f=sp_files&page=$1
+RewriteRule ^admin/cpanel/page/([0-9]+)$  index.php?f=sp_files&page=$1
+RewriteRule ^admin/cpanel/del/([0-9]+)/$ index.php?f=sp_files&del&id=$1
+RewriteRule ^admin/cpanel/del/([0-9]+)$  index.php?f=sp_files&del&id=$1
+RewriteRule ^enter/$ index.php?f=enter
+RewriteRule ^enter$ index.php?f=enter

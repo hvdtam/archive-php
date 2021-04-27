@@ -1,0 +1,80 @@
+body {
+color : #a8a8a8;
+font-size : 13px;
+font-family : arial;
+background-color : #f4f1f3;
+margin : 0;
+}
+a:link, a:active, a:visited {
+color : #f498df;
+text-decoration : none;
+}
+a:hover, a:focus {
+color : #4dccec;
+font-weight : bold;
+}
+span.logo {
+color : #fff;
+position : fixed;
+top : 30px;
+left : 76px;
+}
+div.header {
+background-color : #fda5e7;
+background-image : url(images/header.gif);
+}
+div.of {
+background-image : url(images/of.gif);
+}
+div.top {
+background-image : url(images/top.png);
+background-repeat : no-repeat;
+background-position : left top;
+text-align : center;
+padding-bottom : 2px;
+border-bottom : 1px solid #f7d6ee;
+}
+div.titl {
+color : #6cd9f4;
+background-image : url(images/cont.png);
+padding : 1px;
+border-top : 1px solid #f7d6ee;
+border-bottom : 1px solid #f7d6ee;
+}
+div.cont {
+background-image : url(images/cont.png);
+margin : 4px;
+padding : 2px;
+border : 1px solid #f7d6ee;
+}
+div.girl {
+background-image : url(images/girl.png);
+background-repeat : no-repeat;
+background-position : right bottom;
+}
+div.bhr {
+background-color : #fdace9;
+padding-bottom : 3px;
+}
+div.bot {
+color : #fff;
+background-color : #86e2f9;
+background-image : url(images/bot.gif);
+text-align : center;
+margin-top : 1px;
+border-bottom : 1px solid #6cd9f4;
+}
+div.bot a {
+color : #fff;
+}
+div.stat {
+text-align : center;
+margin-top : 3px;
+}
+/* Style by Mad
+icq: 872-794
+http://wapdiz.ru */
+/*/////////////////////////////////
+//      www.WAP-FORUM.info       //
+//     HAVE IT FROM ANDREW ^^    //
+/////////////////////////////////*/

@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /socbay
+
+RewriteRule ^dv(.*)$ index.php?z=$1 [L]

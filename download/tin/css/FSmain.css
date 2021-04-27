@@ -1,0 +1,236 @@
+#menu {padding-left:5px;border-bottom:5px solid #FFB600;font-size:12px}
+.forum {background:white}
+.forum #header {height:37px;background:url(http://mgiaitri.biz/images/header_bg_forum.gif) repeat-x;padding:3px 0 0 10px}
+#menu a {color:#494949;font-weight:bold}
+#menu tr, #menu td{height:25px;padding-top:4px}
+#menu td {padding-left:5px;padding-right:5px;text-align:center}
+#menu .active {background:#FFB600;}
+#menu .active a {color:white}
+
+a{
+	color:#004992;
+	text-decoration:none;
+}
+a:hover, a:active{
+	color:#FF0000;
+}
+body{
+	background:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	font-family:Arial,Helvetica;
+	font-size:13px;
+}
+h1{
+	font-size:14px;
+	color:#014681;
+	margin:0px;
+	margin-bottom:2px;
+	padding:0px;
+}
+img{
+	border:none;
+}
+p{
+	margin:5px 0px 5px 0px;
+}
+
+.break_module{
+	font-size:0px; /* for IE -- avoid any space from phantom text */
+	height:9px;
+	background:transparent; /* for IE -- avoid space from inherited filters */
+	margin-bottom:-1px;
+	clear:both;
+}
+.break_module_line{
+	font-size:0px; /* for IE -- avoid any space from phantom text */
+	height:17px;
+	background:url(../images/line_h.gif) repeat-x left center;
+	margin-bottom:-1px;
+	clear:both;
+}
+.clear{
+	font-size:0px; /* for IE -- avoid any space from phantom text */
+	height:1px;
+	background:transparent; /* for IE -- avoid space from inherited filters */
+	margin-bottom:-1px;
+	clear:both;
+}
+
+/*
+### Configuration size ###
+*/
+#container_body{
+	margin:0px auto;
+}
+#container_header, #container_content, #container_footer{
+	overflow:hidden;
+}
+#container_header{
+	background:#7E9BE5;
+}
+#container_content{
+	background:#FFFFFF;
+}
+#container_content_center{
+	float:left;
+	width:100%px;
+	overflow:hidden;
+	margin-left:10px;
+}
+#container_footer{
+	background:#F2F2F2 none repeat scroll 0 0;
+	padding: 5px 0px 5px 0px;
+}
+/*
+--- End Configuration size ---
+*/
+#text_logo *{
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	height: 30px;
+	padding: 5px 0px 5px 10px;
+}
+
+#top_menu{
+	background: #BCD5F8;
+	padding: 5px 0px 5px 5px;
+}
+
+.news_picture{
+	float:left;
+	margin-right:8px;
+	font-size:0px;
+}
+.news_picture_f div{
+	position:absolute;
+}
+.news_title{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.news_list{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.news_list li{
+	background:url(/images/icon_asterisk.gif) no-repeat 0px 4px;
+	display:block;
+	margin:5px;
+	padding-left:16px;
+}
+.news_source{
+	font-style:italic;
+	font-weight:normal;
+	color:#868686;
+}
+.news_teaser{
+	line-height:13px;
+	text-align:justify;
+}
+.news_detail_source{
+	color:#999999;
+	font-size:13px;
+	font-style:italic;
+}
+.news_detail_description{
+	font-family:Arial, Helvetica;
+	font-size:13px;
+	text-align:justify;
+}
+.news_detail_description a, .news_detail_description a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+.news_detail_description *{
+   font-family:Arial, Helvetica;
+   font-size:13px;
+}
+.other_news{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.other_news li{
+	display:block;
+	margin-bottom:6px;
+}
+.other_news .title{
+	color:#CA0002;
+	font-size:14px;
+	text-transform:uppercase;
+	font-weight: bold;
+}
+.other_news .list{
+	background:url(../images/icon_asterisk_blue.gif) no-repeat 0px 3px;
+	font-size:13px;
+	padding-left:14px;
+}
+
+.hot_news{
+	padding-top: 13px;
+}
+.hot_news_icon{
+	background:url(/images/hot.gif) no-repeat;
+	display:inline;
+	margin:5px;
+	padding-left:16px;
+}
+
+.module_larger{
+	border:1px #b5bdc0 solid;
+	padding:2px;
+}
+.module_larger .content{
+	height:100%;
+}
+.module_larger .title{
+	margin-bottom:8px;
+	padding-bottom:5px;
+	background:url(/images/line_h.gif) repeat-x left bottom;
+}
+.module_larger .title .L{
+	float:left;
+	color:#ca0002;
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.module_larger .title .L a{
+	color:#ca0002;
+}
+.module_larger .title .R{
+	float:right;
+}
+
+.module_small_2{
+	border:1px #b5bdc0 solid;
+	padding:1px;
+}
+.module_small_2 .title{
+	background:#f4f4f4;
+	color:#ca0002;
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:2px 2px 2px 5px;
+}
+.module_small_2 .title a{
+	color:#ca0002;
+}
+.module_small_2 .title a:hover{
+	color:#FF0000;
+}
+.module_small_2 .content{
+	padding:5px;
+}
+.price{
+	color: #FF0000;
+	font-weight: bold;
+}
+.news_view_more{
+	text-align: right;
+}

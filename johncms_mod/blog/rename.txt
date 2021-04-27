@@ -1,0 +1,10 @@
+http://bentrewap.com
+mr.trinhtam@yahoo.com
+
+--------------------------------------------------------
+
+Up code lên host và Unzip.
+Chạy đường dẫn domain.com/install.php để cài đặt.
+Quản lý theo đường dẫn domain.com/admin
+
+--------------------------------------------------------

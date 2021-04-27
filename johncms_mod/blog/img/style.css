@@ -1,0 +1,35 @@
+body { color: #333333; font-size: medium; font-family: Tahoma; background-color: #fff; background-image: url(background.gif); background-attachment: fixed; background-position: 0 50%; margin: auto; max-width: 800px; }
+form{ padding: 0px;
+margin: 0px; font-size: small; }
+div{ background-color: #fff }
+hr{ margin:0; border: 0; border-top: 1px solid gray; }
+a:link, a:visited { color: #7296ca; text-decoration: none }
+a:hover { color: #3a5e92 }
+.head { background-color: #60a700; background-position: 0; border-bottom: 1px solid #004400; }
+.menu { margin: 0; padding: 5px; padding-bottom: 1px; background-color: #00AA32; border-bottom: 2px solid #00902A; color: #ffffff; }
+.main { background-color: #fff; margin: 0; padding: 4px; border-bottom: 1px solid #c5d5ec; }
+.xem { background-color: #fff; margin: 0; padding: 2px 0 3px 4px; border-bottom: 1px solid #c5d5ec; border-left: 1px solid #c5d5ec; }
+.trang { text-align: center; background:#fff; padding:3px; border-bottom: 1px solid #c5d5ec; }
+.ipage { background-color: #00AA30; padding: 2px; border: 1px solid #00AA32; display: inline-block; text-decoration: none; border: 1px solid #006600; }
+.trang a{ padding: 2px; color: #003300; display: inline-block; border: 1px solid #006600; text-decoration: none; background: #f8f8f8; }
+.tmn { margin: 0; padding: 5px 0 5px 4px; border-top: 3px none #45515d }
+.tmn a:hover{
+text-decoration: underline;
+}
+.foot { padding: 5px; background: #60a700; color: #fff; text-align: center; }
+.foot a{color: #fff;}
+.foot a:hover{color: #fff;}
+.list { margin: 0; padding: 5px; border-bottom: 1px solid #c5d5ec; }
+.list a:hover{
+text-decoration: underline;
+}
+.eb{ border: 1px solid
+#CCC; height: 20px; }
+.fb{ background: url("btn_tim.gif") repeat scroll 0 0 transparent; border: medium none; color: #FFFFFF; height: 24px; width: 30px; }
+.table { padding-top : 2px; background-color: #006600; background-position : top; }
+.table a{ color:#fff; }
+td { line-height:20px; background-color: #006600; }
+#tab { padding-top: 2px; border-bottom: 1px solid #003300; font-size:12px; background-color: #005500; }
+#tab tr, #tab td{ height:30px;padding-top:4px }
+#tab td { padding-left:2px; padding-right:2px;text-align:center }
+#tab .active { background:#fff; font-weight:bold; }

@@ -1,0 +1,8 @@
+##Rewrite by Ari
+ErrorDocument 404 /err.html
+ErrorDocument 403 /err.html
+ErrorDocument 401 /err.html
+ErrorDocument 500 /err.html
+RewriteEngine On
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^err.html$ index.php?err [L]

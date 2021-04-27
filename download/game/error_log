@@ -1,0 +1,2 @@
+[22-Aug-2012 08:41:50] PHP Warning:  include(./end.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/u792491743/public_html/game/index.php on line 20
+[22-Aug-2012 08:41:50] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening './end.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/u792491743/public_html/game/index.php on line 20

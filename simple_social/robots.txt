@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Allow: /
+Sitemap: http://10bc1.tk/sitemap.xml
+User-agent: AutoMapIt
+Disallow:
+Crawl-delay: 20
+Sitemap: http://10bc1.tk/sitemap.xml

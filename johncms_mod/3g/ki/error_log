@@ -1,0 +1,6 @@
+[30-Jun-2012 10:00:08 UTC] PHP Warning:  include(rdaz.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/x10wap/public_html/ki/head.php on line 55
+[30-Jun-2012 10:00:08 UTC] PHP Warning:  include(rdaz.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/x10wap/public_html/ki/head.php on line 55
+[30-Jun-2012 10:00:08 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'rdaz.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/x10wap/public_html/ki/head.php on line 55
+[30-Jun-2012 10:05:33 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/x10wap/public_html/ki/index.php on line 1
+[30-Jun-2012 10:09:06 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/x10wap/public_html/ki/index.php on line 1
+[30-Jun-2012 10:10:20 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/x10wap/public_html/ki/index.php on line 1

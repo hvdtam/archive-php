@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /truyen-co-tich
+RewriteRule ^mucluc/(.*).html$ mucluc.php?truyen=$1/ [L]
+RewriteRule ^truyen/(.*).html$ view.php?truyen=$1/ [L]
+RewriteRule ^page/(.*).html$ index.php?page=$1 [L]
+RewriteRule ^index.html$ index.php [L]

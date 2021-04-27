@@ -1,0 +1,36 @@
+[10-Aug-2011 05:25:54] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:25:54] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:25:54] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'online.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:11] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:11] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:11] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'online.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:37] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:37] PHP Warning:  include(online.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 05:26:37] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'online.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/tanhoa2/public_html/logonew/other/foot.php on line 2
+[10-Aug-2011 06:16:24] PHP Warning:  imagecolorallocate() expects parameter 2 to be long, string given in /home/tanhoa2/public_html/logonew/image.php on line 80
+[10-Aug-2011 06:16:32] PHP Warning:  imagecolorallocate() expects parameter 2 to be long, string given in /home/tanhoa2/public_html/logonew/image.php on line 80
+[10-Aug-2011 06:16:58] PHP Warning:  imagecolorallocate() expects parameter 2 to be long, string given in /home/tanhoa2/public_html/logonew/image.php on line 80
+[14-Aug-2011 01:15:40] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 434
+[14-Aug-2011 01:15:40] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 439
+[14-Aug-2011 01:15:40] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 444
+[14-Aug-2011 01:15:40] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 452
+[14-Aug-2011 01:15:41] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 18
+[14-Aug-2011 01:15:41] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 26
+[14-Aug-2011 01:15:41] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 34
+[14-Aug-2011 01:15:41] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 42
+[14-Aug-2011 01:16:02] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 18
+[14-Aug-2011 01:16:02] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 26
+[14-Aug-2011 01:16:02] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 34
+[14-Aug-2011 01:16:02] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 42
+[26-Aug-2011 22:44:09] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 434
+[26-Aug-2011 22:44:09] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 439
+[26-Aug-2011 22:44:09] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 444
+[26-Aug-2011 22:44:09] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/download.php on line 452
+[26-Aug-2011 22:44:10] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 18
+[26-Aug-2011 22:44:10] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 26
+[26-Aug-2011 22:44:10] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 34
+[26-Aug-2011 22:44:10] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 42
+[26-Aug-2011 22:44:19] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 18
+[26-Aug-2011 22:44:19] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 26
+[26-Aug-2011 22:44:19] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 34
+[26-Aug-2011 22:44:19] PHP Deprecated:  Function ereg() is deprecated in /home/tanhoa2/public_html/logonew/image.php on line 42

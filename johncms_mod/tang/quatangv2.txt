@@ -1,0 +1,72 @@
+﻿/**
+ * @package     TrinhHuyenTrang
+ * @link        http://trinhhuyentrang.org
+ * @copyright   Copyright (C) 2008-2011 HuyenTrang
+ * @license     LICENSE.txt (see attached file)
+ * @version     VERSION.txt (see attached file)
+ * @author      Tong Hoai
+ */
+
+Fix mod qua tang am nhac johncms
+
+
+
+Hien tai co ve mod cua minh chua duoc nhieu nguoi hai long nen hom nay minh update fix mot so loi sau:
++ Hien ten nguoi nhan ra trang chu.
++ Them lua chon cach gui tang bai hat.
+
+Huong dan:
++ Vao phpAdmin go doan sql sau vao sql:
+Alter table quatang add url text;
++ Upload lai file index.php vao thu muc quatang.
++ Mo file pages/mainmenu.php xoa code hien thi qua tang cu di va thay bang:
+/*
+-----------------------------------------------------------------
+Qua Tang
+-----------------------------------------------------------------
+*/
+echo '<div class="mainblok"><div class="phdr"><b>' .$lng['quatang0']. '</b></div><div class="menu">';
+{
+$roq = mysql_query("SELECT `quatang`.*, `users`.`name`  FROM `quatang` LEFT JOIN `users` ON `quatang`.`user_id_gui` = `users`.`id` ORDER BY `time` DESC LIMIT 1;");;
+while ($res = mysql_fetch_array($roq))
+{
+$post = functions::checkout($res['text'], 1, 1);
+$post = functions::smileys($post, $res['rights'] >= 1 ? 1 : 0);
+echo '<div>' .$lng['quatang1']. ' ' .$res['name']. ' ' .$lng['quatang2']. ' ' .$lng['quatang3']. ' ' .$res['user_id_nhan']. '</div>';
+echo '<div>' .$lng['quatang4']. ' <font color="red"> ' .$res['baihat']. '</font></div>';
+echo '<div>' .$lng['quatang5']. ' ' .$post. '</div>';
+if (!$res['url'] or $res['url']=='empty') {
+echo '<a href="http://mp3.m.zing.vn/web/search?q=' .$res['baihat']. '">' .$lng['quatang6']. '</a>';
+           } else {
+echo '<a href="' .$res['url']. '">' .$lng['quatang6']. '</a>';
+                  }
+++$i;
+}
+}
+echo '</div></div>';
+
++ Mo incfiles/language/vn/_core.lng xoa het ngon ngu quatang cu di va thay vao do:
+quatang0                      =   "Quà Tặng"
+quatang1                      =   "Bạn"
+quatang2                      =   "gửi tặng"
+quatang3                      =   "bạn"
+quatang4                      =   "Bài hát:"
+quatang5                      =   "Với nội dung:"
+quatang6                      =   "Tải bài hát"
+quatang7                      =   "Bạn chưa nhập tên bài hát."
+quatang8                      =   "Bạn chưa nhập ID người nhận."
+quatang9                      =   "Bạn chưa nhập nội dung."
+quatang10                     =   "Làm lại"
+quatang11                     =   "Quà của bạn đã được đăng tải."
+quatang12                     =   "Giá:"
+quatang13                     =   "Tên bài hát"
+quatang14                     =   "Tên người nhận"
+quatang15                     =   "Nội dung"
+quatang16                     =   "Bạn không dủ tiền để gửi rồi!"
+quatang17                     =   "Bạn chưa nhập url bài hát."
+quatang18                     =   "Url bài hát."
+quatang19                     =   "Bạn đang ở chế độ gửi bài hát không thông qua URL. Để chuyển qua chế độ gửi thông qua URL vui lòng"
+quatang20                     =   "Bạn đang ở chế độ gửi bài hát thông qua URL. Để chuyển qua chế độ gửi không thông qua URL vui lòng"
+
+
++ Code chua phat hien loi, ai phat hien vui long thong bao nha. thanks!

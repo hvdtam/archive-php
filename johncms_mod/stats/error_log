@@ -1,0 +1,26 @@
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/incfiles/classes/statistic.php on line 136
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/incfiles/classes/statistic.php on line 187
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/incfiles/classes/statistic.php on line 301
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_result(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/incfiles/classes/statistic.php on line 255
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/stats/index.php on line 49
+[18-Jul-2012 07:17:03] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home/u254835472/public_html/stats/index.php on line 66
+[18-Jul-2012 07:17:03] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 07:17:03] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 79
+[18-Jul-2012 07:41:24] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/os.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 09:34:07] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/os.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 09:34:55] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/model.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 13:26:01] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/model.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 19:25:53] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 19:42:31] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 20:27:29] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/model.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 20:27:30] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/we.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 20:27:31] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/se.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[18-Jul-2012 22:55:08] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 22:55:19] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 22:55:25] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 22:57:15] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 23:28:27] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 23:32:13] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[18-Jul-2012 23:35:29] PHP Warning:  Division by zero in /home/u254835472/public_html/stats/index.php on line 76
+[19-Jul-2012 00:53:42] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/model.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188
+[19-Jul-2012 10:01:32] PHP Warning:  imagepng() [<a href='function.imagepng'>function.imagepng</a>]: Unable to open 'tmp/model.png' for writing: No such file or directory in /home/u254835472/public_html/stats/pChart/pChart.class on line 3188

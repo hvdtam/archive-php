@@ -1,0 +1,13 @@
+@Mod chào thành viên theo thời gian
+itshare.info
+
+/////Hướng dẫn/////
+B1: Up files time.php lên thư mục incfiles :D
+B2: Mở head.php
+Tìm đoạn chào thay tất cả thành
+
+require_once($rootpath . 'incfiles/time.php');
+
+	echo '<div class="header">'.$chao.' ' . ($user_id ? '<b><font color="red"> ' . $login . '</font>!</b>' : 'khách!') . '</div>';
+B3: Xem thành quả!
+Chúc bạn thành công

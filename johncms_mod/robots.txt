@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /panel/
+Allow: /
+Sitemap: http://wapdep.tk/sitemap.xml
+User-agent: AutoMapIt
+Disallow:
+Crawl-delay: 20
+Sitemap: http://wapdep.tk/sitemap.xml

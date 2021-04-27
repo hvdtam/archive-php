@@ -1,0 +1,4 @@
+User-agent: *
+sitemap: http://bentrewap.com/sitemap.xml
+Disallow: /file
+Disallow: /admin

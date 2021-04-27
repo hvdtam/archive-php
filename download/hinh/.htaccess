@@ -1,0 +1,3 @@
+ErrorDocument 403 http://bentrewap.com/index.html
+ErrorDocument 404 http://bentrewap.com/index.html
+ErrorDocument 500 http://bentrewap.com/index.html

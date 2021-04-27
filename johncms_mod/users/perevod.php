@@ -1,0 +1,185 @@
+<?php
+/** **************************
+***Gnom**********************
+***gnom-09_@mail.ru***********
+***6.10.2009******************
+***Сайт:http://vip-wap.ru****
+***ICQ: 99-01-07*************
+/**/
+define('_IN_JOHNCMS', 1);
+$headmod = 'perevod';
+$textl = 'Giao Dịch VND';
+require_once ("../incfiles/core.php");
+require_once ("../incfiles/head.php");
+switch($act)
+{
+default:
+if(empty($_GET['id']))
+{
+echo '<b>Chuyển VND</b><br/>';
+echo '<form method="POST" action="perevod.php?act=ok">';
+echo '<div class="gmenu">';
+echo 'Bạn đang có: <b>'.$datauser['balans'].' VND</b><br/>';
+echo 'Chuyển VND qua danh sách thành viên:<br/>';
+echo ' 1: <input type="radio"  value="1" name="pos" checked="checked"/>';
+echo 'Nếu bạn không nhớ, hãy chọn một nick :<br/>';
+echo '<select name="users">';
+echo '<option value="">Danh sách</option>';
+$sql = mysql_query("select `id`,`name` from `users`");
+while($res = mysql_fetch_array($sql))
+{
+echo '<option value="'.$res['id'].'">'.$res['name'].'</option>';
+}
+echo '</select><br/>';
+echo ' 2: <input type="radio"  value="2" name="pos" />';
+echo 'Viết số ID hoặc tên Nick<br/><input name="user"/><br/>';
+echo 'Số VND cần chuyển:<br/><input name="bal"/><br/>';
+echo '<input value="Chuyển VND" type="submit" name="submit"/></div></form>';
+}else{
+$sql = mysql_query("select `id`,`name` from `users` WHERE `id` = '".$id."' LIMIT 1;");
+if(mysql_num_rows($sql)!=="0")
+{
+$user = mysql_fetch_array($sql);
+echo '<form method="POST" action="perevod.php?act=ok&amp;id='.$user['id'].'">';
+echo 'Chuyển VND cho thành viên <b>'.$user['name'].'</b><br/>';
+echo 'Số VND chuyển :<br/><input name="bal"/><br/>';
+echo '<input value="Chuyển" type="submit" name="submit"/></form>';
+}
+}
+break;
+case "ok";
+if(empty($_GET['id']))
+{
+if(!empty($_POST['submit']))
+{
+if($_POST['pos'] == "1")
+{
+$user = isset($_POST['users'])?abs(intval($_POST['users'])):false;
+}elseif($_POST['pos'] == "2")
+{
+$user = isset($_POST['user'])?check($_POST['user']):false;
+}
+$ball = isset($_POST['bal'])?abs(intval($_POST['bal'])):false;
+$count = mysql_result(mysql_query("select COUNT(*) from `users` WHERE `id` = '".$user."' or `name` = '".$user."'"),0);
+if($count > 0 )
+{
+$arr = mysql_fetch_array(mysql_query("select `name`,`balans` from `users` WHERE `id` = '".$user."'  or `name` = '".$user."' LIMIT 1"));
+$q = mysql_fetch_array(mysql_query("select `name`,`balans` from `users` WHERE `id` = '".$user_id."' LIMIT 1"));
+if($q['balans'] >= 10000)
+{
+if($arr['name'] !== $q['name'])
+{
+if($ball > 1 && $q['balans'] > $ball)
+{
+$min_bal = intval($q['balans'] - $ball);
+$plus_bal = intval($arr['balans'] + $ball);
+$botsend = '' . $login . ' đã chuyển '.$ball.' VND cho '.$arr['name'].' ! :cuoito: ';
+mysql_query("INSERT INTO `forum` SET
+`refid` = '203',
+`type` = 'm' ,
+`time` = '" . time() . "',
+`user_id` = '3',
+`from` = 'BOT',
+`ip` = '00000',
+`ip_via_proxy` = '" . core::$ip_via_proxy . "',
+`soft` = '" . mysql_real_escape_string($agn1) . "',
+`text` = '" . mysql_real_escape_string($botsend) . "'
+");
+$fadd = mysql_insert_id();
+// Обновляем время топика
+mysql_query("UPDATE `forum` SET
+`time` = '" . time() . "'
+WHERE `id` = '9'
+");
+$msg = 'Chuyển khoản: <b><a href="/users/profile.php?user=' . $user_id . '">' . $login . '</b></a> đã chuyễn cho bạn '.$ball.' VND.<br/>Đây là tin nhắn tự động.Chúc bạn 1 ngày vui vẻ cùng TaMk.tK!';
+mysql_query("update `users` set `balans` = '".$min_bal."' where `id` = '".$user_id."' LIMIT 1");
+mysql_query("update `users` set `balans` = '".$plus_bal."' where `id` = '".$user."'  or `name` = '".$user."' LIMIT 1");
+mysql_query("insert into `privat` values(0,'".$arr['name']."','" . $msg . "','" .time(). "','BOT(Máy Chém Tự Động)','in','no','Thông tin về chuyển khoản VND','0','','','','" . mysql_real_escape_string($fname) . "');");
+echo '<p>Chuyển thành công '.$ball.' VND cho thành viên '.$arr['name'].'<br/>';
+}else{
+echo '<p>Không thể chuyển tiền, số VND của bạn ít hơn số VND muốn chuyển!</p>';
+}
+}else{
+echo '<p>Có lỗi, không thể chuyển tiền!</p>';
+}
+}else{
+echo '<p>Không thể chuyển tiền, số VND của bạn ít hơn số VND muốn chuyển!</p>';
+}
+}else{
+echo '<p><b>Sai tên thành viên!</b><br/>';
+echo '<a href="perevod.php?r='.mt_rand(0000,9999).'">Quay lại</a></p>';
+require_once ("../incfiles/end.php");
+exit;
+}
+}else{
+echo '<p><b>Có lỗi!!!</b><br/>';
+echo '<a href="perevod.php?r='.mt_rand(0000,9999).'">Quay lại</a></p>';
+require_once ("../incfiles/end.php");
+exit;
+}
+}else{
+if(!empty($_POST['submit']))
+{
+$ball = isset($_POST['bal'])?abs(intval($_POST['bal'])):false;
+$count = mysql_result(mysql_query("select COUNT(*) from `users` WHERE `id` = '".$id."'"),0);
+if($count > 0 )
+{
+$arr = mysql_fetch_array(mysql_query("select `name`,`balans` from `users` WHERE `id` = '".$id."' LIMIT 1"));
+$q = mysql_fetch_array(mysql_query("select `name`,`balans` from `users` WHERE `id` = '".$user_id."' LIMIT 1"));
+if($q['balans'] >= 10000)
+{
+if($arr['name'] !== $q['name'])
+{
+if($ball > 1 && $q['balans'] > $ball)
+{
+$min_bal = intval($q['balans'] - $ball);
+$plus_bal = intval($arr['balans'] + $ball);
+$botsend = '' . $login . ' đã chuyển '.$ball.' VND cho '.$arr['name'].' ! :cuoito: ';
+mysql_query("INSERT INTO `forum` SET
+`refid` = '203',
+`type` = 'm' ,
+`time` = '" . time() . "',
+`user_id` = '2',
+`from` = 'BOT Giao Dịch',
+`ip` = '00000',
+`ip_via_proxy` = '" . core::$ip_via_proxy . "',
+`soft` = '" . mysql_real_escape_string($agn1) . "',
+`text` = '" . mysql_real_escape_string($botsend) . "'
+");
+$fadd = mysql_insert_id();
+// Обновляем время топика
+mysql_query("UPDATE `forum` SET
+`time` = '" . time() . "'
+WHERE `id` = '9'
+");
+$msg = 'Chuyển khoản: <b><a href="/users/profile.php?user=' . $user_id . '">' . $login . '</b></a> đã chuyễn cho bạn '.$ball.' VND.<br/>Đây là tin nhắn tự động.Chúc bạn 1 ngày vui vẻ cùng TaMk.tK!';
+mysql_query("update `users` set `balans` = '".$min_bal."' where `id` = '".$user_id."' LIMIT 1");
+mysql_query("update `users` set `balans` = '".$plus_bal."' where `id` = '".$id."' LIMIT 1");
+mysql_query("insert into `privat` values(0,'".$arr['name']."','" . $msg . "','" .time(). "','BOT(Máy Chém Tự Động)','in','no','Thông tin về chuyển khoản Gbb','0','','','','" . mysql_real_escape_string($fname) . "');");
+echo '<p>Chuyển thành công  '.$ball.' VND cho thành viên '.$arr['name'].'<br/>';
+}else{
+echo '<p>Không thể chuyển tiền, số VND của bạn ít hơn số VND muốn chuyển!</p>';
+}
+}else{
+echo '<p>Có lỗi, không thể chuyển tiền!</p>';
+}
+}else{
+echo '<p>Không thể chuyển tiền, số VND của bạn ít hơn số VND muốn chuyển!</p>';
+}
+}else{
+echo '<p><b>Sai tên thành viên!</b><br/>';
+echo '<a href="perevod.php?r='.mt_rand(0000,9999).'">Quay lại</a></p>';
+require_once ("../incfiles/end.php");
+exit;
+}
+}else{
+echo '<p><b>Lỗi!!!</b><br/>';
+echo '<a href="perevod.php?r='.mt_rand(0000,9999).'">Quay lại</a></p>';
+require_once ("../incfiles/end.php");
+exit;
+}
+}
+break;
+}
+require_once ("../incfiles/end.php");
+?>

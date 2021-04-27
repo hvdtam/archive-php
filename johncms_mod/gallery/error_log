@@ -1,0 +1,1 @@
+[09-Jul-2012 17:11:12] PHP Warning:  touch() [<a href='function.touch'>function.touch</a>]: Unable to create file ./iplog/ because Is a directory in /home/u761417618/public_html/m/incfiles/head_qdk.php on line 78

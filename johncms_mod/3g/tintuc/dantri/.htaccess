@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /dantri
+RewriteRule ^(.*)/(.*)/(.*)$ index.php?link=/$1/$2/$3 [QSA,L,NC]
+RewriteRule ^(.*)/(.*)/(.*)$ ?link=/$1/$2/$3 [QSA,L,NC]
+RewriteRule ^(.*)/(.*)$ index.php?link=/$1/$2 [QSA,L,NC]
+RewriteRule ^(.*)/(.*)$ ?link=/$1/$2 [QSA,L,NC]

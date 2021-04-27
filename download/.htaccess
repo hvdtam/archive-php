@@ -1,0 +1,13 @@
+Options All -Indexes
+DirectoryIndex index.html index.php
+
+<FilesMatch "^(s2u.firewall_system.php|jquery.min.js|styleindex.css|script.js|403.shtml)$">
+order allow,deny
+allow from all
+</FilesMatch>
+
+ErrorDocument 401 /s2u.firewall_until/401.shtml
+ErrorDocument 400 /s2u.firewall_until/400.shtml
+ErrorDocument 403 /s2u.firewall_until/403.shtml
+ErrorDocument 404 /s2u.firewall_until/404.shtml
+ErrorDocument 500 /s2u.firewall_until/500.shtml

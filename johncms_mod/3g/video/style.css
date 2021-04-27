@@ -1,0 +1,119 @@
+/*FOR ALL IMAGES*/
+img
+{
+border : 0px;
+vertical-align : middle
+}
+
+ body { 
+margin: 0px;
+padding: 0; 
+font-family : Comic Sans MS, Bold, Helvetica, sans-serif; 
+font-weight : normal; 
+font-size : 12px; 
+color : #ffffff; 
+background-color : #000000; 
+} 
+.catchtubebetalogo
+{
+background-image:url('http://naijatop.net/styleImages/logo-bg.png');
+text-align:left;
+padding-top: 3px; 
+padding-bottom: 2px;
+ padding-left: 5px;
+ font-size: 0px;
+}
+.header
+{
+background-image:url('http://naijatop.net/styleImages/logo-bg.png');
+padding:3px;
+margin:1px;
+border-bottom:1px solid #999;
+margin-left:-3px;
+}
+.catchtubebeta1
+{
+background-image:url('http://naijatop.net/styleImages/logo-bg.png');
+padding:3px;
+margin:1px;
+border-bottom:1px solid #999;
+margin-left:-3px;
+}
+/* for where the logo is */
+.logo
+{
+font-weight:bold;
+background:#ddf;
+border-bottom:1px solid #bbf;
+text-align:left;
+}
+
+/* for where titles & sub-titles are */
+.shout
+{
+background-image:url('http://naijatop.net/styleImages/logo-bg.png');
+padding:3px;
+margin:1px;
+border-bottom:1px solid #999;
+margin-left:-3px;
+}
+
+/* for where the main content is (best aligned left) */
+.menu3
+{
+text-align:left;
+border-bottom:1px solid #999;
+margin-left:3px;
+}
+
+/* for where the main content is (best aligned left) */
+.shoutmenu
+{
+padding:3px;
+margin:1px;
+}
+
+/* for where the main link is at the bottom of every page */
+.footer
+{
+background:#ddf;
+text-align:left;
+}
+
+/* all links */
+a img, :link img, :visited img { border: none; }
+a	{ text-decoration:none; color:#0099cc; }
+a:hover,a:active  {
+	text-decoration: none;
+	color: #00ccff;
+        text-shadow: 0 0 5px #00ffff;
+}
+
+
+/* input/select/submit/textarea */
+input.password,input[type=password]{
+border:1px solid #000;
+}
+
+input.text,input[type=text]{
+border:1px solid #000;
+}
+
+input.file,input[type=file]{
+border:1px solid #000;
+}
+
+input.submit,input[type=submit]{
+border:1px solid #000;
+color:#000;
+}
+
+select{
+border:1px solid #bbf;
+margin:3px;
+}
+
+textarea{
+margin:3px;
+border:1px solid #bbf;
+}

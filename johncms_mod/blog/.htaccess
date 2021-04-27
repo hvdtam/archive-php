@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteRule ^index.html$ /index.php
+RewriteRule ^comment$ /lcm.php
+RewriteRule ^sitemap.xml$ /sitemap.php
+RewriteRule ^top-like.html$ /index.php?thich
+RewriteRule ^top-view.html$ /index.php?xem
+RewriteRule ^theloai.html$ /theloai.php
+RewriteRule ^down_([0-9]+).html$ /down.php?id=$1
+RewriteRule ^trang-([0-9]+).html$ /index.php?p=$1
+RewriteRule ^comment-([0-9]+)$ /lcm.php?p=$1
+RewriteRule ^cap([0-9]+).gif$ /captcha.php
+RewriteRule ^m_(.*)/tr([0-9]+)_(.*).html$ /xem.php?id=$2&url=$3
+RewriteRule ^m_(.*)/like([0-9]+)_(.*).html$ /xem.php?id=$2&url=$3&vote
+RewriteRule ^m_(.*)/p([0-9]+)_([0-9]+)_(.*).html$ /xem.php?id=$3&url=$4&p=$2
+RewriteRule ^comment/p([0-9]+)_([0-9]+)_(.*).html$ /comment.php?id=$2&url=$3&p=$1
+RewriteRule ^comment/del([0-9]+)_([0-9]+)_(.*).html$ /comment.php?id=$2&url=$3&delpost=$1
+RewriteRule ^comment/tr([0-9]+)_(.*).html$ /comment.php?id=$1&url=$2
+RewriteRule ^comment/smi_([0-9]+)_(.*).html$ /comment.php?id=$1&url=$2&smi
+RewriteRule ^m_(.*)$ /theloai.php?url=$1
+RewriteRule ^p([0-9]+)_(.*)$ /theloai.php?url=$2&p=$1
+
+ErrorDocument 404 http://bentrewap.com/index.html
+ErrorDocument 403 http://bentrewap.com/index.html
+ErrorDocument 500 http://bentrewap.com/index.html

@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /mp3
+RewriteRule ^web/album/detail web-album-detail.php [L]
+RewriteRule ^web/song/play web-song-play.php [L]
+RewriteRule ^web/song/suggest web-song-suggest.php [L]
+RewriteRule ^web/home web-home.php [L]
+RewriteRule ^web/song/lyrics web-song-lyrics.php [L]
+RewriteRule ^web/topic/detail web-topic-detail.php [L]
+RewriteRule ^web/chart/detail web-chart-detail.php [L]
+RewriteRule ^web/chart/song web-chart-song.php [L]
+RewriteRule ^web/search web-search.php [L]
+RewriteRule ^web/artist web-artist.php [L]
+RewriteRule ^/web/artist/list web-artist-list.php [L]
