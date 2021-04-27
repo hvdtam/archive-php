@@ -2,3 +2,4 @@
 `JohnCMS Mod`
 
 `Download`
+`Simple Social`
